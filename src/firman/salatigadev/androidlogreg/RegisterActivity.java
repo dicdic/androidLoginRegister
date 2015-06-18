@@ -9,17 +9,17 @@ public class RegisterActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Set View to register.xml
+        // Set View ke register.xml
         setContentView(R.layout.register);
  
         TextView loginScreen = (TextView) findViewById(R.id.link_to_login);
  
-        // Listening to Login Screen link
+        // Mengambil link ke Login form
         loginScreen.setOnClickListener(new View.OnClickListener() {
  
             public void onClick(View arg0) {
-                                // Closing registration screen
-                // Switching to Login Screen/closing register screen
+                // Menutup tampilan screen register
+                // Beralih ke Login Screen/menutup screen register
                 finish();
             }
         });
