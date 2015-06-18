@@ -16,11 +16,11 @@ public class LoginActivity extends Activity {
 		
 		TextView registerScreen = (TextView) findViewById(R.id.link_to_register);
 		 
-        // Listening to register new account link
+        // Mengambil link ke register new account
         registerScreen.setOnClickListener(new View.OnClickListener() {
  
             public void onClick(View v) {
-                // Switching to Register screen
+                // Beralih ke tampilan screen Register
                 Intent i = new Intent(getApplicationContext(), RegisterActivity.class);
                 startActivity(i);
             }
@@ -30,7 +30,7 @@ public class LoginActivity extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
+		
 		getMenuInflater().inflate(R.menu.login, menu);
 		return true;
 	}
